@@ -1,0 +1,621 @@
+{
+  "test_size": 2600,
+  "classes": [
+    "Business",
+    "Education",
+    "Entertainment",
+    "Health & Fitness",
+    "Lifestyle & Daily Life",
+    "Natural Disaster",
+    "News & Social Concern",
+    "Science & Technology",
+    "Sports & Gaming"
+  ],
+  "models": {
+    "svm": {
+      "accuracy": 0.7911538461538462,
+      "precision_macro": 0.7001512672969018,
+      "recall_macro": 0.586132286207276,
+      "f1_macro": 0.6206456225562803,
+      "precision_weighted": 0.7813906492538355,
+      "recall_weighted": 0.7911538461538462,
+      "f1_weighted": 0.7801787714240191,
+      "classification_report": {
+        "Business": {
+          "precision": 0.6,
+          "recall": 0.28378378378378377,
+          "f1-score": 0.3853211009174312,
+          "support": 74.0
+        },
+        "Education": {
+          "precision": 0.6666666666666666,
+          "recall": 0.2692307692307692,
+          "f1-score": 0.3835616438356164,
+          "support": 52.0
+        },
+        "Entertainment": {
+          "precision": 0.7530674846625767,
+          "recall": 0.8322033898305085,
+          "f1-score": 0.7906602254428341,
+          "support": 590.0
+        },
+        "Health & Fitness": {
+          "precision": 0.5483870967741935,
+          "recall": 0.288135593220339,
+          "f1-score": 0.37777777777777777,
+          "support": 59.0
+        },
+        "Lifestyle & Daily Life": {
+          "precision": 0.6054421768707483,
+          "recall": 0.4734042553191489,
+          "f1-score": 0.5313432835820896,
+          "support": 188.0
+        },
+        "Natural Disaster": {
+          "precision": 0.9769392033542977,
+          "recall": 0.9708333333333333,
+          "f1-score": 0.9738766980146291,
+          "support": 480.0
+        },
+        "News & Social Concern": {
+          "precision": 0.7197696737044146,
+          "recall": 0.78125,
+          "f1-score": 0.7492507492507493,
+          "support": 480.0
+        },
+        "Science & Technology": {
+          "precision": 0.5964912280701754,
+          "recall": 0.4657534246575342,
+          "f1-score": 0.5230769230769231,
+          "support": 73.0
+        },
+        "Sports & Gaming": {
+          "precision": 0.834597875569044,
+          "recall": 0.9105960264900662,
+          "f1-score": 0.8709422011084719,
+          "support": 604.0
+        },
+        "accuracy": 0.7911538461538462,
+        "macro avg": {
+          "precision": 0.7001512672969018,
+          "recall": 0.586132286207276,
+          "f1-score": 0.6206456225562803,
+          "support": 2600.0
+        },
+        "weighted avg": {
+          "precision": 0.7813906492538355,
+          "recall": 0.7911538461538462,
+          "f1-score": 0.7801787714240191,
+          "support": 2600.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          21,
+          1,
+          8,
+          2,
+          5,
+          2,
+          18,
+          2,
+          15
+        ],
+        [
+          0,
+          14,
+          11,
+          1,
+          5,
+          0,
+          16,
+          2,
+          3
+        ],
+        [
+          4,
+          1,
+          491,
+          0,
+          22,
+          1,
+          32,
+          1,
+          38
+        ],
+        [
+          1,
+          1,
+          7,
+          17,
+          6,
+          0,
+          16,
+          1,
+          10
+        ],
+        [
+          4,
+          1,
+          46,
+          0,
+          89,
+          0,
+          20,
+          6,
+          22
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          1,
+          466,
+          7,
+          1,
+          3
+        ],
+        [
+          4,
+          2,
+          50,
+          8,
+          12,
+          6,
+          375,
+          9,
+          14
+        ],
+        [
+          1,
+          0,
+          13,
+          1,
+          1,
+          0,
+          19,
+          34,
+          4
+        ],
+        [
+          0,
+          1,
+          25,
+          1,
+          6,
+          2,
+          18,
+          1,
+          550
+        ]
+      ],
+      "display_name": "TF-IDF + SVM",
+      "inference_seconds_total": 2.691646089000642,
+      "inference_ms_per_tweet": 1.0352484957694776,
+      "train_seconds": 1.9193260629999713,
+      "mean_confidence": 0.7149637858186494
+    },
+    "logreg": {
+      "accuracy": 0.7834615384615384,
+      "precision_macro": 0.6708150017393284,
+      "recall_macro": 0.628239811774616,
+      "f1_macro": 0.6434589101593376,
+      "precision_weighted": 0.7829318091968613,
+      "recall_weighted": 0.7834615384615384,
+      "f1_weighted": 0.7817127701247756,
+      "classification_report": {
+        "Business": {
+          "precision": 0.5306122448979592,
+          "recall": 0.35135135135135137,
+          "f1-score": 0.42276422764227645,
+          "support": 74.0
+        },
+        "Education": {
+          "precision": 0.6451612903225806,
+          "recall": 0.38461538461538464,
+          "f1-score": 0.4819277108433735,
+          "support": 52.0
+        },
+        "Entertainment": {
+          "precision": 0.7885906040268457,
+          "recall": 0.7966101694915254,
+          "f1-score": 0.7925801011804384,
+          "support": 590.0
+        },
+        "Health & Fitness": {
+          "precision": 0.43636363636363634,
+          "recall": 0.4067796610169492,
+          "f1-score": 0.42105263157894735,
+          "support": 59.0
+        },
+        "Lifestyle & Daily Life": {
+          "precision": 0.5377358490566038,
+          "recall": 0.6063829787234043,
+          "f1-score": 0.57,
+          "support": 188.0
+        },
+        "Natural Disaster": {
+          "precision": 0.9807280513918629,
+          "recall": 0.9541666666666667,
+          "f1-score": 0.9672650475184794,
+          "support": 480.0
+        },
+        "News & Social Concern": {
+          "precision": 0.7075098814229249,
+          "recall": 0.7458333333333333,
+          "f1-score": 0.7261663286004056,
+          "support": 480.0
+        },
+        "Science & Technology": {
+          "precision": 0.5492957746478874,
+          "recall": 0.5342465753424658,
+          "f1-score": 0.5416666666666666,
+          "support": 73.0
+        },
+        "Sports & Gaming": {
+          "precision": 0.8613376835236541,
+          "recall": 0.8741721854304636,
+          "f1-score": 0.8677074774034511,
+          "support": 604.0
+        },
+        "accuracy": 0.7834615384615384,
+        "macro avg": {
+          "precision": 0.6708150017393284,
+          "recall": 0.628239811774616,
+          "f1-score": 0.6434589101593376,
+          "support": 2600.0
+        },
+        "weighted avg": {
+          "precision": 0.7829318091968613,
+          "recall": 0.7834615384615384,
+          "f1-score": 0.7817127701247756,
+          "support": 2600.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          26,
+          2,
+          4,
+          5,
+          6,
+          1,
+          15,
+          4,
+          11
+        ],
+        [
+          0,
+          20,
+          6,
+          1,
+          7,
+          0,
+          14,
+          2,
+          2
+        ],
+        [
+          6,
+          1,
+          470,
+          1,
+          42,
+          2,
+          36,
+          2,
+          30
+        ],
+        [
+          2,
+          1,
+          6,
+          24,
+          7,
+          0,
+          9,
+          2,
+          8
+        ],
+        [
+          4,
+          1,
+          29,
+          0,
+          114,
+          1,
+          18,
+          7,
+          14
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          458,
+          14,
+          1,
+          3
+        ],
+        [
+          8,
+          4,
+          41,
+          17,
+          21,
+          5,
+          358,
+          12,
+          14
+        ],
+        [
+          1,
+          0,
+          11,
+          2,
+          2,
+          0,
+          15,
+          39,
+          3
+        ],
+        [
+          2,
+          1,
+          28,
+          4,
+          12,
+          0,
+          27,
+          2,
+          528
+        ]
+      ],
+      "display_name": "TF-IDF + Logistic Regression",
+      "inference_seconds_total": 2.452019360000122,
+      "inference_ms_per_tweet": 0.9430843692308163,
+      "train_seconds": 15.312222655000369,
+      "mean_confidence": 0.7395387678311724
+    },
+    "distilbert": {
+      "accuracy": 0.8307692307692308,
+      "precision_macro": 0.714578436331366,
+      "recall_macro": 0.7159047397156365,
+      "f1_macro": 0.7141416983786405,
+      "precision_weighted": 0.832123292556911,
+      "recall_weighted": 0.8307692307692308,
+      "f1_weighted": 0.8309604895506202,
+      "classification_report": {
+        "Business": {
+          "precision": 0.609375,
+          "recall": 0.527027027027027,
+          "f1-score": 0.5652173913043478,
+          "support": 74.0
+        },
+        "Education": {
+          "precision": 0.5849056603773585,
+          "recall": 0.5961538461538461,
+          "f1-score": 0.5904761904761905,
+          "support": 52.0
+        },
+        "Entertainment": {
+          "precision": 0.8330550918196995,
+          "recall": 0.8457627118644068,
+          "f1-score": 0.8393608074011775,
+          "support": 590.0
+        },
+        "Health & Fitness": {
+          "precision": 0.4927536231884058,
+          "recall": 0.576271186440678,
+          "f1-score": 0.53125,
+          "support": 59.0
+        },
+        "Lifestyle & Daily Life": {
+          "precision": 0.6333333333333333,
+          "recall": 0.7074468085106383,
+          "f1-score": 0.6683417085427136,
+          "support": 188.0
+        },
+        "Natural Disaster": {
+          "precision": 0.9705882352941176,
+          "recall": 0.9625,
+          "f1-score": 0.9665271966527197,
+          "support": 480.0
+        },
+        "News & Social Concern": {
+          "precision": 0.7960088691796009,
+          "recall": 0.7479166666666667,
+          "f1-score": 0.7712137486573577,
+          "support": 480.0
+        },
+        "Science & Technology": {
+          "precision": 0.5882352941176471,
+          "recall": 0.547945205479452,
+          "f1-score": 0.5673758865248227,
+          "support": 73.0
+        },
+        "Sports & Gaming": {
+          "precision": 0.9229508196721311,
+          "recall": 0.9321192052980133,
+          "f1-score": 0.9275123558484349,
+          "support": 604.0
+        },
+        "accuracy": 0.8307692307692308,
+        "macro avg": {
+          "precision": 0.714578436331366,
+          "recall": 0.7159047397156365,
+          "f1-score": 0.7141416983786405,
+          "support": 2600.0
+        },
+        "weighted avg": {
+          "precision": 0.832123292556911,
+          "recall": 0.8307692307692308,
+          "f1-score": 0.8309604895506202,
+          "support": 2600.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          39,
+          4,
+          2,
+          1,
+          3,
+          0,
+          13,
+          3,
+          9
+        ],
+        [
+          2,
+          31,
+          9,
+          0,
+          2,
+          0,
+          7,
+          0,
+          1
+        ],
+        [
+          3,
+          3,
+          499,
+          1,
+          37,
+          1,
+          28,
+          2,
+          16
+        ],
+        [
+          2,
+          1,
+          2,
+          34,
+          7,
+          0,
+          6,
+          2,
+          5
+        ],
+        [
+          6,
+          2,
+          23,
+          4,
+          133,
+          1,
+          8,
+          2,
+          9
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3,
+          462,
+          12,
+          3,
+          0
+        ],
+        [
+          11,
+          6,
+          35,
+          20,
+          17,
+          11,
+          359,
+          15,
+          6
+        ],
+        [
+          1,
+          4,
+          7,
+          3,
+          5,
+          1,
+          11,
+          40,
+          1
+        ],
+        [
+          0,
+          2,
+          22,
+          6,
+          3,
+          0,
+          7,
+          1,
+          563
+        ]
+      ],
+      "display_name": "DistilBERT (fine-tuned)",
+      "inference_seconds_total": 126.30805231700106,
+      "inference_ms_per_tweet": 48.58002012192349,
+      "train_seconds": 2764.147502181001,
+      "mean_confidence": 0.9027888178825378
+    }
+  },
+  "event_type_model": {
+    "train_size": 19199,
+    "test_size": 4801,
+    "accuracy": 0.9762549468860654,
+    "macro_f1": 0.9761378900267688,
+    "report": {
+      "Earthquake": {
+        "precision": 0.9835255354200988,
+        "recall": 0.978688524590164,
+        "f1-score": 0.981101068200493,
+        "support": 1220.0
+      },
+      "Flood": {
+        "precision": 0.9858215179316097,
+        "recall": 0.9825436408977556,
+        "f1-score": 0.984179850124896,
+        "support": 1203.0
+      },
+      "Hurricane / Cyclone": {
+        "precision": 0.9526226734348562,
+        "recall": 0.9673539518900344,
+        "f1-score": 0.9599317988064792,
+        "support": 1164.0
+      },
+      "Wildfire": {
+        "precision": 0.9825870646766169,
+        "recall": 0.9761120263591433,
+        "f1-score": 0.9793388429752066,
+        "support": 1214.0
+      },
+      "accuracy": 0.9762549468860654,
+      "macro avg": {
+        "precision": 0.9761391978657954,
+        "recall": 0.9761745359342744,
+        "f1-score": 0.9761378900267688,
+        "support": 4801.0
+      },
+      "weighted avg": {
+        "precision": 0.9763711576087967,
+        "recall": 0.9762549468860654,
+        "f1-score": 0.976294445342115,
+        "support": 4801.0
+      }
+    },
+    "train_seconds": 8.162812395999936,
+    "note": "Evaluated on HumAID's official test split (same 19 events as training).",
+    "unseen_event_cv": {
+      "n_splits": 5,
+      "accuracy": 0.7450833333333333,
+      "macro_f1": 0.7498688772557882,
+      "note": "Grouped by event: test folds contain only disasters unseen in training."
+    }
+  }
+}

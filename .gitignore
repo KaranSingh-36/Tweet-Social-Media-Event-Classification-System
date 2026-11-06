@@ -1,0 +1,28 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local caches / downloads (re-created by the pipeline)
+.hf_cache/
+nltk_data/
+data/raw/
+*.part
+
+# Large model artefacts (re-create with `python run_pipeline.py`)
+models/transformer/checkpoints/
+models/transformer/distilbert-event-classifier/*.safetensors
+models/transformer/distilbert-event-classifier/*.bin
+
+# Runtime logs
+logs/*.log
+logs/prediction_history.csv
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.idea/

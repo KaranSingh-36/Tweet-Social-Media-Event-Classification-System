@@ -1,0 +1,26 @@
+[theme]
+base = "dark"
+primaryColor = "#38BDF8"
+backgroundColor = "#0B1120"
+secondaryBackgroundColor = "#131C31"
+textColor = "#E2E8F0"
+font = "sans-serif"
+baseRadius = "0.6rem"
+borderColor = "#1F2A44"
+showWidgetBorder = true
+chartCategoricalColors = ["#38BDF8", "#A78BFA", "#22C55E", "#F97316", "#EAB308", "#EC4899", "#14B8A6", "#EF4444", "#3B82F6"]
+
+[theme.sidebar]
+backgroundColor = "#080D1A"
+secondaryBackgroundColor = "#111A2E"
+borderColor = "#1A2440"
+
+[client]
+toolbarMode = "minimal"
+showErrorDetails = true
+
+[browser]
+gatherUsageStats = false
+
+[server]
+maxUploadSize = 100

@@ -1,0 +1,249 @@
+{
+  "total_tweets": 12999,
+  "n_categories": 9,
+  "tweets_per_category": {
+    "Sports & Gaming": 3021,
+    "Entertainment": 2948,
+    "Natural Disaster": 2400,
+    "News & Social Concern": 2398,
+    "Lifestyle & Daily Life": 941,
+    "Business": 371,
+    "Science & Technology": 366,
+    "Health & Fitness": 294,
+    "Education": 260
+  },
+  "missing_text_removed": 0,
+  "duplicates_removed": 10,
+  "ambiguous_removed": 656,
+  "remaining_missing_values": 0,
+  "avg_char_length": 165.7935225786599,
+  "avg_word_count": 27.199092237864452,
+  "median_word_count": 25.0,
+  "shortest_tweet": {
+    "text": "Stay safe everyone \u1f614\u2764\ufe0f",
+    "chars": 23,
+    "label": "Natural Disaster"
+  },
+  "longest_tweet": {
+    "text": "@TmanSpeaks @DrUmeshPrabhu @BosBorn1 @AdamRogers2030 @NevilleGaunt @DrJDrooghaag @antgrasso @akwyz @JolaBurnett @NeilCattermull @ChuckDBrooks @kennethholley @Kevin_Jackson @LisaH_Jackson @MusicComposer1 @imoyse @reach2ratan @BillMew #SocialMedia #EyesOnIdlib #FF #YemenGenocide #SaturdayMotivation FOR #Syria #Iraq #Nigeria #climatechange #drought #floods #heatwave Seek Solutions? #Google #Microsoft #Apple #Technologies #techtredz #EUdefence #Blockchain #UK #TeamJunckerEU",
+    "chars": 474,
+    "label": "Natural Disaster"
+  },
+  "imbalance_ratio": 11.61923076923077,
+  "majority_class": "Sports & Gaming",
+  "minority_class": "Education",
+  "split_sizes": {
+    "train": 9099,
+    "test": 2600,
+    "val": 1300
+  },
+  "source_distribution": {
+    "TweetTopic": 10599,
+    "HumAID": 2400
+  },
+  "tweets_with_hashtags_pct": 42.91868605277329,
+  "top_words": [
+    {
+      "word": "new",
+      "count": 1227
+    },
+    {
+      "word": "get",
+      "count": 1064
+    },
+    {
+      "word": "go",
+      "count": 971
+    },
+    {
+      "word": "day",
+      "count": 907
+    },
+    {
+      "word": "flood",
+      "count": 880
+    },
+    {
+      "word": "love",
+      "count": 864
+    },
+    {
+      "word": "make",
+      "count": 850
+    },
+    {
+      "word": "year",
+      "count": 842
+    },
+    {
+      "word": "kerala",
+      "count": 827
+    },
+    {
+      "word": "time",
+      "count": 825
+    },
+    {
+      "word": "one",
+      "count": 749
+    },
+    {
+      "word": "people",
+      "count": 743
+    },
+    {
+      "word": "game",
+      "count": 712
+    },
+    {
+      "word": "please",
+      "count": 709
+    },
+    {
+      "word": "watch",
+      "count": 692
+    },
+    {
+      "word": "help",
+      "count": 689
+    },
+    {
+      "word": "see",
+      "count": 663
+    },
+    {
+      "word": "news",
+      "count": 654
+    },
+    {
+      "word": "music",
+      "count": 645
+    },
+    {
+      "word": "come",
+      "count": 622
+    },
+    {
+      "word": "thank",
+      "count": 595
+    },
+    {
+      "word": "like",
+      "count": 584
+    },
+    {
+      "word": "say",
+      "count": 580
+    },
+    {
+      "word": "heart",
+      "count": 579
+    },
+    {
+      "word": "red",
+      "count": 571
+    },
+    {
+      "word": "trump",
+      "count": 569
+    },
+    {
+      "word": "video",
+      "count": 555
+    },
+    {
+      "word": "live",
+      "count": 554
+    },
+    {
+      "word": "happy",
+      "count": 541
+    },
+    {
+      "word": "need",
+      "count": 540
+    }
+  ],
+  "top_hashtags": [
+    {
+      "hashtag": "#keralafloods",
+      "count": 224
+    },
+    {
+      "hashtag": "#earthquake",
+      "count": 158
+    },
+    {
+      "hashtag": "#keralafloodrelief",
+      "count": 114
+    },
+    {
+      "hashtag": "#nowplaying",
+      "count": 97
+    },
+    {
+      "hashtag": "#eqnz",
+      "count": 90
+    },
+    {
+      "hashtag": "#shopmycloset",
+      "count": 63
+    },
+    {
+      "hashtag": "#kerala",
+      "count": 61
+    },
+    {
+      "hashtag": "#italyearthquake",
+      "count": 51
+    },
+    {
+      "hashtag": "#bts",
+      "count": 48
+    },
+    {
+      "hashtag": "#cycloneidai",
+      "count": 46
+    },
+    {
+      "hashtag": "#covid19",
+      "count": 35
+    },
+    {
+      "hashtag": "#hurricaneharvey",
+      "count": 35
+    },
+    {
+      "hashtag": "#campfire",
+      "count": 35
+    },
+    {
+      "hashtag": "#pakistan",
+      "count": 34
+    },
+    {
+      "hashtag": "#1",
+      "count": 34
+    },
+    {
+      "hashtag": "#greece",
+      "count": 33
+    },
+    {
+      "hashtag": "#keralaflood",
+      "count": 32
+    },
+    {
+      "hashtag": "#hurricanedorian",
+      "count": 32
+    },
+    {
+      "hashtag": "#np",
+      "count": 31
+    },
+    {
+      "hashtag": "#harvey",
+      "count": 31
+    }
+  ]
+}

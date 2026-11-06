@@ -1,0 +1,129 @@
+{
+  "tfidf": {
+    "n_features": 18511,
+    "params": {
+      "ngram_range": "(1, 2)",
+      "min_df": "2",
+      "max_df": "0.9",
+      "max_features": "50000",
+      "sublinear_tf": "True"
+    },
+    "fit_seconds": 0.75943022499996
+  },
+  "svm": {
+    "best_C": 0.5,
+    "grid": [
+      {
+        "C": 0.05,
+        "val_macro_f1": 0.6070587962033338,
+        "val_accuracy": 0.7646153846153846
+      },
+      {
+        "C": 0.1,
+        "val_macro_f1": 0.6224144090036295,
+        "val_accuracy": 0.7769230769230769
+      },
+      {
+        "C": 0.25,
+        "val_macro_f1": 0.6256743304026955,
+        "val_accuracy": 0.7892307692307692
+      },
+      {
+        "C": 0.5,
+        "val_macro_f1": 0.6260336220672718,
+        "val_accuracy": 0.7876923076923077
+      },
+      {
+        "C": 1.0,
+        "val_macro_f1": 0.6126059910598077,
+        "val_accuracy": 0.7846153846153846
+      }
+    ],
+    "train_seconds": 1.9193260629999713,
+    "calibration": "CalibratedClassifierCV(sigmoid, cv=5)"
+  },
+  "logreg": {
+    "best_C": 10.0,
+    "grid": [
+      {
+        "C": 1.0,
+        "val_macro_f1": 0.6204087129981438,
+        "val_accuracy": 0.7746153846153846
+      },
+      {
+        "C": 2.0,
+        "val_macro_f1": 0.628042669763664,
+        "val_accuracy": 0.7815384615384615
+      },
+      {
+        "C": 5.0,
+        "val_macro_f1": 0.6242297608234388,
+        "val_accuracy": 0.7876923076923077
+      },
+      {
+        "C": 10.0,
+        "val_macro_f1": 0.6283991740164488,
+        "val_accuracy": 0.7907692307692308
+      },
+      {
+        "C": 20.0,
+        "val_macro_f1": 0.6179184074861177,
+        "val_accuracy": 0.7830769230769231
+      }
+    ],
+    "train_seconds": 15.312222655000369
+  },
+  "event_type": {
+    "train_size": 19199,
+    "test_size": 4801,
+    "accuracy": 0.9762549468860654,
+    "macro_f1": 0.9761378900267688,
+    "report": {
+      "Earthquake": {
+        "precision": 0.9835255354200988,
+        "recall": 0.978688524590164,
+        "f1-score": 0.981101068200493,
+        "support": 1220.0
+      },
+      "Flood": {
+        "precision": 0.9858215179316097,
+        "recall": 0.9825436408977556,
+        "f1-score": 0.984179850124896,
+        "support": 1203.0
+      },
+      "Hurricane / Cyclone": {
+        "precision": 0.9526226734348562,
+        "recall": 0.9673539518900344,
+        "f1-score": 0.9599317988064792,
+        "support": 1164.0
+      },
+      "Wildfire": {
+        "precision": 0.9825870646766169,
+        "recall": 0.9761120263591433,
+        "f1-score": 0.9793388429752066,
+        "support": 1214.0
+      },
+      "accuracy": 0.9762549468860654,
+      "macro avg": {
+        "precision": 0.9761391978657954,
+        "recall": 0.9761745359342744,
+        "f1-score": 0.9761378900267688,
+        "support": 4801.0
+      },
+      "weighted avg": {
+        "precision": 0.9763711576087967,
+        "recall": 0.9762549468860654,
+        "f1-score": 0.976294445342115,
+        "support": 4801.0
+      }
+    },
+    "train_seconds": 8.162812395999936,
+    "note": "Evaluated on HumAID's official test split (same 19 events as training).",
+    "unseen_event_cv": {
+      "n_splits": 5,
+      "accuracy": 0.7450833333333333,
+      "macro_f1": 0.7498688772557882,
+      "note": "Grouped by event: test folds contain only disasters unseen in training."
+    }
+  }
+}

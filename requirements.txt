@@ -1,0 +1,29 @@
+# Intelligent Tweet / Social Media Event Classification System
+# Python 3.10 / 3.11 – install ONLY inside the project's .venv:
+#   python -m pip install -r requirements.txt
+#
+# PyTorch: on Windows/macOS the default PyPI wheel is CPU-only (small).
+# On Linux the default wheel bundles CUDA (~2.5 GB); for a CPU-only install use:
+#   python -m pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
+
+# --- Frontend ---
+streamlit==1.67.0
+plotly==7.1.0
+
+# --- Data processing ---
+pandas==3.1.1
+numpy==2.4.6
+pyarrow==26.0.1
+
+# --- Classical ML / NLP ---
+scikit-learn==1.9.1
+joblib==1.6.0
+nltk==3.10.4
+emoji==2.16.0
+
+# --- Deep learning / transformers ---
+torch==2.15.0
+transformers==5.22.1
+
+# --- Testing ---
+pytest==9.2.0
